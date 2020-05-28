@@ -1,0 +1,89 @@
+beginning of line 					ctrl+a
+end of line  						ctrl e
+back 1 word 	 					alt/esc+b
+frwd 1 word 						alt/esc+f
+delete word back					alt/esc+bkspc
+delete word frwd					alt/esc+d
+
+DIRECTORIES
+present working directory			pwd
+list directory contents 			ls
+manual 								man
+save/quit 							:wq
+quit without saving					:q!
+list w/ more info					ls -al
+change directory					cd
+up one directory					cd ../../ etc
+previous directory					cd -
+create folder						mkdir
+create subdirectories				mkdir -p folder/folder2/folder3
+remove hierarchy 					rm -r
+remove								rm
+move 								mv "folder/file" "destination"
+current directory when mv			.
+folder structure					tree (installed from brew)
+rename folder						mv "original" "new name"
+
+FILES
+Create file							query.sql
+Remove file							rm
+Remove all files starting with		rm query-*.sql
+Add to file 						echo "whatever text" > filename
+View file							cat
+Append to file 						echo "whatever text" >> filename
+paginate through 					less "filename"
+first 10 lines						head
+last 10 lines						tail
+
+recursive (contents)				-r
+any file (wildcard)					*
+copy								cp "original" "new"
+copy directory						cp -r
+
+find all in below					find .
+find with name						-name 
+find files or DIRECTORIES 			-type f or d 
+find ignore case					-iname 
+find all ending						-name "*.sql"
+find empty							-empty
+find and delete						-delete after conditions
+
+grep- searches text within files
+search in folder 					grep "parameter" folder -r
+search in folder line number		-rn
+case insensitive					-rni
+lines before and after				-A 3 -B 3
+
+show command history				history
+use command from history			!123
+history of greps					history | grep "grep"
+previous command					!! + space
+replace in command					^rep^grep
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
