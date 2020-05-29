@@ -1,0 +1,60 @@
+transfer data to or from a URL			curl
+preserve name												-O
+
+navigating around VIM
+
+open and jump to line number				vim +20 classes.js
+next word														w
+previous word												b
+beginning of line										0
+end of line													$
+beginning line after whitespace			^
+line 1															gg
+end of file													G
+move paragraph by paragraph					shift+[]
+specific line number								8gg, 9gg, etc
+write																:w
+quit w/o saving											:q!
+write/quit													:wq
+
+insert mode	(before cursor)					i
+append (after cursor)								a
+insert (next line)									o
+insert (previous line)							shift+o
+append (end of line)								shift+a
+undo 																u
+redo																ctrl+r
+
+delete 															d
+	word																w
+	line																d
+	everything													GG
+	beginning of word										b
+	beginning of line 									0
+	end of line 												$
+delete 3 lines											3dd
+cut																	dd
+paste																p
+
+search and replace
+
+search															/text
+next result													n
+previous result											shift+n
+replace															:%s/text/replace/
+	global (entire file)								g
+	confirm															c
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

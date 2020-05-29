@@ -1,0 +1,59 @@
+Scripts
+	- Contains a series of commands
+	- an interpreter executes commands in the script
+	- anything you can type at the command line, you can put in a script
+	- great for automating
+
+Shebang or Not to Shebang
+	- If a script does not contain a shebang the commands are executed using your shell
+	- You may get lucky. Maybe. Hopefully.
+	- Different shells have slightly varying syntax
+
+Variables
+	- Storage locations that have a name
+	- Name-Value pairs
+	- Syntax:
+		VARIABLE_NAME="Value"
+	- Variables are case-sensitive
+	- By convention, variables are all uppercase
+	- Precede variable with $
+	- Use curly braces for adding data after ${VARIABLE}
+	- Can only start with letters, but can include digits
+
+Assigning Command Output to a Variable
+	 SERVER_NAME=$(hostname)
+	 echo "You are running this script on ${SERVER_NAME}."
+	 Output: 
+	 You are running this script on linuxsvr.
+
+Tests
+	- Syntax:
+		[ condition-to-test-for ]
+	- Example: 
+		[ -e /etc/passwd ]
+		tests if there is a password file in /etc
+
+File Operators (tests)
+	-d FILE 	True if file is a directory
+	-e FILE 	True if file exists
+	-f FILE 	True if file exists and is a regular file
+	-r FILE 	True if file is readable by you
+	-s FILE 	True if file exists and is not empty
+	-w FILE 	True if the file is writable by you
+	-x FILE 	True if the file is executable by you
+String operators (tests)
+	-z STRING 		True if string is empty
+	-n STRING 		True if string is not empty
+	STRING1=STRING2	True if strings are equal
+	STRING!=STRING2	True if the strings are not equal
+Arithmetic operators
+	arg1 -eq arg2	True if arg1 is equal to arg2
+	-ne 			not equal to
+	-lt 			less than
+	-le 			less than or equal to
+	-gt 			greater than
+	-ge 			greater than or equal to
+
+
+
+
